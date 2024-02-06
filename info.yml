@@ -24,11 +24,12 @@ TEST_DATE: 'TBD'
 # URL or reference to IR chat program like Teams, Slack, or Discord (e.g., chat.acme.tld/codename)
 RESPONSE_CHAT: 'Microsoft Teams'
 
-# Phone number for response teleconference (e.g., 123-456-7890)
-RESPONSE_PHONE: 'Microsoft Teams VTC'
+RESPONSE_CHAT_SECONDARY: 'Slack'
 
 # URL for response video teleconference (VTC) like Zoom or WebEx (e.g., zoom.acme.tld/codename)
 RESPONSE_VTC: 'Microsoft Teams VTC'
+
+RESPONSE_VTC_SECONDARY: 'Slack'
 
 # Description/URL for alternate email (e.g., alt 365 tenant at ir.acme.tld/othermail)
 ALTERNATE_EMAIL: 'Personal Email'
@@ -36,23 +37,8 @@ ALTERNATE_EMAIL: 'Personal Email'
 # Domain name for your organization (e.g., acme.tld)
 ORGANIZATION_DOMAIN: 'firstclose.com'
 
-# Number or URL to page Commander(s) (e.g., 555-PAGE)
-INCIDENT_COMMANDER_PAGER_NUMBER: 'NA'
-
-# Number or URL to page Commander(s) (e.g., ir.acme.tld/ic-page)
-INCIDENT_COMMANDER_PAGER_URL: 'NA'
-
 # URL/path to Commander roster/list (e.g., ir.acme.tld/ic-roster)
-INCIDENT_COMMANDER_ROSTER: 'TBD'
-
-# As above, for security team (e.g., ir.acme.tld/sec-roster)
-SECURITY_TEAM_ROSTER: 'TBD'
-
-# As above, for SMEs (e.g., ir.acme.tld/sme-roster)
-TEAM_SME_ROSTER: 'TBD'
-
-# As above, for executive team (e.g., ir.acme.tld/exec-roster)
-EXECUTIVE_ROSTER: '{{EXECUTIVE_ROSTER}}'
+ROLE_ROSTER_AND_CONTACT: 'https://firstclose.atlassian.net/wiki/spaces/IT/pages/3539042343/Response+Team+Contact+List'
 
 # Time to wait for on-duty IC on call (e.g., 15 minutes)
 INCIDENT_COMMANDER_RESPONSE_SLA: '{{INCIDENT_COMMANDER_RESPONSE_SLA}}'
@@ -61,25 +47,25 @@ INCIDENT_COMMANDER_RESPONSE_SLA: '{{INCIDENT_COMMANDER_RESPONSE_SLA}}'
 UPDATE_FREQUENCY: '4 hours'
 
 # URL/path to incident file (e.g., ir.acme.tld/files/codename)
-INCIDENT_FILE_LOCATION: '{{INCIDENT_FILE_LOCATION}}'
+INCIDENT_FILE_LOCATION: 'Teams->InfoSec Team->Incident Channel'
 
 # URL/path to critical information list, data you want to protect (e.g., ir.acme.tld/cil)
 CRITICAL_INFO_LIST_LOCATION: '{{CRITICAL_INFO_LIST_LOCATION}}'
 
 # URL/path to critical asset list, systems you want to protect (e.g., ir.acme.tld/cal)
-CRITICAL_ASSET_LIST_LOCATION: '{{CRITICAL_ASSET_LIST_LOCATION}}'
+CRITICAL_ASSET_LIST_LOCATION: '[WIki Doc - Confluence](https://firstclose.atlassian.net/wiki/spaces/IT/pages/3521970206/Critical+System+Inventory)'
 
 # URL/path to asset management DB (e.g., ir.acme.tld/assets)
-ASSET_MGMT_DB_LOCATION: '{{ASSET_MGMT_DB_LOCATION}}'
+ASSET_MGMT_DB_LOCATION: '[AssetIT - Atlassian Marketplace](https://firstclose.atlassian.net/plugins/servlet/ac/com.devsamurai.plugin.jira.asset/asset-it-page?project.key=POS&project.id=10638)'
 
 # URL/path to network map (e.g., ir.acme.tld/netmap)
 NETWORK_MAP_LOCATION:  '{NETWORK_MAP_LOCATION{}}'
 
 # URL to SIEM (e.g., siem.acme.tld)
-SIEM_CONSOLE_LOCATION: '{{SIEM_CONSOLE_LOCATION}}'
+SIEM_CONSOLE_LOCATION: 'https://artemis.reconis.co/'
 
 # URL to log aggregator (e.g., elk.acme.tld)
-LOG_AGGREGATOR_CONSOLE: '{{LOG_AGGREGATOR_CONSOLE}}'
+LOG_AGGREGATOR_CONSOLE: 'https://artemis.reconis.co/'
 
 # Name/URL of live response tool (e.g., [velociraptor](https://www.velocidex.com))
 LIVE_RESPONSE_TOOL: '{{LIVE_RESPONSE_TOOL}}'
@@ -97,16 +83,16 @@ INCIDENT_REPORT_TEMPLATE: '{{INCIDENT_REPORT_TEMPLATE}}'
 INCIDENT_REPORT_RECIPIENTS: '{{INCIDENT_REPORT_RECIPIENTS}}'
 
 # Compliance team name and contact info (e.g., the legal team, legal@acme.tld)
-COMPLIANCE_TEAM:  '{COMPLIANCE_TEAM{}}'
+COMPLIANCE_TEAM:  'the legal team, Matt Falso, legal@firstclose.com'
 
 # Communications team name and contact info (e.g., the marketing team, marketing@acme.tld)
-COMMUNICATIONS_TEAM: '{{COMMUNICATIONS_TEAM}}'
+COMMUNICATIONS_TEAM: 'marketing and operations teams, marketing@firstclose.com, ops@firstclose.com'
 
 # Executive team name and contact info (e.g., the front office, bosses@acme.tld)
-EXECUTIVE_TEAM: '{{EXECUTIVE_TEAM}}'
+EXECUTIVE_TEAM: '[Email](https://teams.microsoft.com/l/channel/19%3AarwUqRvJay36ZjuDxUfUaiexzqJlI2WlWBj9KO3vGNk1%40thread.tacv2/?groupId=c6a61f3a-0f7b-49cd-949d-b889c6027eed&tenantId=26677d38-ef08-4b2a-b85f-e71b18075c10)'
 
 # Legal team name (e.g., the legal team, legal@acme.tld)
-LEGAL_TEAM: '{{LEGAL_TEAM}}'
+LEGAL_TEAM: 'the legal team, Matt Falso, legal@firstclose.com'
 
 # Local law enforcement contact info (e.g., Detective Jane Doe, police@local.gov.tld)
 LOCAL_LE_CONTACT: '{{LOCAL_LE_CONTACT}}'
@@ -115,87 +101,21 @@ LOCAL_LE_CONTACT: '{{LOCAL_LE_CONTACT}}'
 FBI_CONTACT: '{{FBI_CONTACT}}'
 
 # Vendor for IR and infosec support (e.g., [Counteractive Security](https://www.counteractive.net))
-INCIDENT_RESPONSE_VENDOR: '{{INCIDENT_RESPONSE_VENDOR}}'
+INCIDENT_RESPONSE_VENDOR: '[Recon](https://www.reconinfosec.com/)'
 
 # Vendor for PR support (e.g., public relations llc, pr.firm.tld)
-PUBLIC_RELATIONS_VENDOR: '{{PUBLIC_RELATIONS_VENDOR}}'
+PUBLIC_RELATIONS_VENDOR: '[Campbell-Lewis Communications](https://campbelllewis.com/), 212.995.8057'
 
 # (Cyber) insurance provider (e.g., AAA insurance co., cyber.insurance.tld)
-INSURANCE_VENDOR: '{{INSURANCE_VENDOR}}'
+INSURANCE_VENDOR: '[Watkins Insurance Group](https://watkinsinsurancegroup.com/who-we-are/meet-our-team/team-member/mike-draeken/), Mike Draeken'
 
 # Industry ISAC contact info (e.g., FS ISAC, https://en.wikipedia.org/wiki/Information_Sharing_and_Analysis_Center)
-ISAC_CONTACT: '{{ISAC_CONTACT}}'
+ISAC_CONTACT: 'https://www.fsisac.com/ - Contact TBD'
 
 # After action review (AAR) service level agreement (time after completion of incident to conduct AAR) (e.g., 5 business days)
-AAR_SLA: '{{AAR_SLA}}'
+AAR_SLA: '5 business days'
 
 # AAR attendees (e.g., ir.acme.tld/aar/attendees)
 AAR_ATTENDEES: '{{AAR_ATTENDEES}}'
 
 
-# Role roster information
-COMMANDER_1_NAME: '{{COMMANDER_1_NAME}}'
-
-COMMANDER_1_PHONE: '{{COMMANDER_1_PHONE}}'
-
-COMMANDER_1_EMAIL: '{{COMMANDER_1_EMAIL}}'
-
-COMMANDER_2_NAME: '{{COMMANDER_2_NAME}}'
-
-COMMANDER_2_PHONE: '{{COMMANDER_2_PHONE}}'
-
-COMMANDER_2_EMAIL: '{{COMMANDER_2_EMAIL}}'
-
-COMMANDER_3_NAME: '{{COMMANDER_3_NAME}}'
-
-COMMANDER_3_PHONE: '{{COMMANDER_3_PHONE}}'
-
-COMMANDER_3_EMAIL: '{{COMMANDER_3_EMAIL}}'
-
-DEPUTY_1_NAME: '{{DEPUTY_1_NAME}}'
-
-DEPUTY_1_PHONE: '{{DEPUTY_1_PHONE}}'
-
-DEPUTY_1_EMAIL: '{{DEPUTY_1_EMAIL}}'
-
-DEPUTY_2_NAME: '{{DEPUTY_2_NAME}}'
-
-DEPUTY_2_PHONE: '{{DEPUTY_2_PHONE}}'
-
-DEPUTY_2_EMAIL: '{{DEPUTY_2_EMAIL}}'
-
-SCRIBE_1_NAME: '{{SCRIBE_1_NAME}}'
-
-SCRIBE_1_PHONE: '{{SCRIBE_1_PHONE}}'
-
-SCRIBE_1_EMAIL: '{{SCRIBE_1_EMAIL}}'
-
-SCRIBE_2_NAME: '{{SCRIBE_2_NAME}}'
-
-SCRIBE_2_PHONE: '{{SCRIBE_2_PHONE}}'
-
-SCRIBE_2_EMAIL: '{{SCRIBE_2_EMAIL}}'
-
-EXPERT_1_NAME: '{{EXPERT_1_NAME}}'
-
-EXPERT_1_PHONE: '{{EXPERT_1_PHONE}}'
-
-EXPERT_1_EMAIL: '{{EXPERT_1_EMAIL}}'
-
-EXPERT_2_NAME: '{{EXPERT_2_NAME}}'
-
-EXPERT_2_PHONE: '{{EXPERT_2_PHONE}}'
-
-EXPERT_2_EMAIL: '{{EXPERT_2_EMAIL}}'
-
-LIASON_1_NAME: '{{LIASON_1_NAME}}'
-
-LIASON_1_PHONE: '{{LIASON_1_PHONE}}'
-
-LIASON_1_EMAIL: '{{LIASON_1_EMAIL}}'
-
-LIASON_2_NAME: '{{LIASON_2_NAME}}'
-
-LIASON_2_PHONE: '{{LIASON_2_PHONE}}'
-
-LIASON_2_EMAIL: '{{LIASON_2_EMAIL}}'

@@ -8,8 +8,6 @@ This incident response plan is based on the concise, directive, specific, flexib
 
 It was last reviewed on {{REVIEW_DATE}}. It was last tested on {{TEST_DATE}}.
 
-`TODO: Customize this plan template for your organization using instructions at https://github.com/counteractive/incident-response-plan-template.  For incident response services, or help customizing, implementing, or testing your plan, contact us at contact@counteractive.net or at (888) 925-5765.`
-
 # Assess
 
 1. **Stay calm and professional.**
@@ -43,8 +41,8 @@ Create an [simple two-word phrase](http://creativityforyou.com/combomaker.html) 
 
 1. Contact the on-duty/on-call Incident Commander. See instructions on contact methods below. 
 1. **Do not** discuss the incident outside the response team unless cleared by the Incident Commander
-1. Launch and/or join the response chat at {{RESPONSE_CHAT}} using the codename in the chat title.
-1. Launch and/or join the response call at {{RESPONSE_PHONE}} and/or {{RESPONSE_VTC}}. 
+1. Launch and/or join the response chat at {{RESPONSE_CHAT}} using the codename in the chat title. Use {{RESPONSE_CHAT_SECONDARY}} as an alternative if neccessary.
+1. Launch and/or join the response call at{{RESPONSE_VTC}} or {{RESPONSE_VTC_SECONDARY}} if neccessary. 
 1. Prefer voice call, chat, and secure file exchange over any other methods.
 1. **Do not** use primary email if possible.  If email is necessary, use sparingly or use {{ALTERNATE_EMAIL}}.  Encrypt emails when any participant is outside the {{ORGANIZATION_DOMAIN}} domain. 
 1. **Do not** use SMS/text to communicate about the incident, unless to tell someone to move to a more secure channel.
@@ -65,9 +63,9 @@ Create an [simple two-word phrase](http://creativityforyou.com/combomaker.html) 
   * SMEs for Teams/Business Units
   * SMEs for Executive Functions (_e.g._, Legal, HR, Finance)
 
-### Reference: Response Team Contact Information
+### Reference: Response Team Roster and Contact Information
 
-See [Role Roster](#role-roster)
+[Roster and Contact Info]({{ROLE_ROSTER_AND_CONTACT}})
 
 ## Establish Battle Rhythm
 
@@ -203,9 +201,6 @@ Network map               | {{NETWORK_MAP_LOCATION}}
 SIEM console              | {{SIEM_CONSOLE_LOCATION}}
 Log aggregator            | {{LOG_AGGREGATOR_CONSOLE}}
 
-`TODO: Complete critical information and asset lists ("crown jewels"). This is incredibly important to effective response.`
-
-`TODO: Customize response resource list`
 
 ## Update Investigative Plan and Incident File
 
@@ -452,9 +447,8 @@ All communication must include the most accurate information available.  Display
 
 ### Create Incident Report
 
-* Upon incident closure, capture information in the [incident file](#create-incident-file) for distribution using the format at {{INCIDENT_REPORT_TEMPLATE}}.  **If the vector, impact, summary, timeline, and activity reports are complete, this can be fully automated.**
+* Upon incident closure, capture information in the [incident file](#create-incident-file) for distribution using the format at {{INCIDENT_REPORT_TEMPLATE}}.
 * Distribute the incident report to the following: {{INCIDENT_REPORT_RECIPIENTS}}.
-* `TODO: Customize incident report creation and distribution, if necessary`
 
 ## Communicate Externally
 

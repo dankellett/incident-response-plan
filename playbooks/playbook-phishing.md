@@ -6,7 +6,7 @@ Assign steps to individuals or teams to work concurrently, when possible; this p
 
 ### Investigate
 
-`TODO: Expand investigation steps, including key questions and strategies, for phishing.`
+`TODO: Work with Recon MDR to redefine this`
 
 1. **Scope the attack** Usually you will be notified that a potential phishing attack is underway, either by a user, customer, or partner.
     * Determine **total number of impacted users**

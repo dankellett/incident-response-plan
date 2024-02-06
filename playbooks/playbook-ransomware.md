@@ -6,7 +6,7 @@ Assign steps to individuals or teams to work concurrently, when possible; this p
 
 ### Investigate
 
-`TODO: Expand investigation steps, including key questions and strategies, for ransomware.`
+`TODO: Work with MDR partner (Recon) to redefine`
 
 1. **Determine the type** of ransomware (_i.e.,_ what is the family, variant, or flavor?)[<sup>[1]</sup>](#ransomware-playbook-ref-1)
     1. Find any related messages.  Check:
